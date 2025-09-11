@@ -4,9 +4,9 @@ include 'conection.php';
 
 // create Admin Account
 if ($conn) {
-    $hash = password_hash('4321', PASSWORD_DEFAULT);
-    $username = 'epro creativ';
-    $email = 'tb99@gmail.com';
+    $hash = password_hash('tbMotors', PASSWORD_DEFAULT);
+    $username = 'tubilex motors';
+    $email = 'tubilexmotorslimited@gmail.com';
     $role = 'admin';
     $sql = "INSERT INTO admin ( username, email, password, role) VALUES ('$username','$email', '$hash', '$role')";
     $stmt = $conn->prepare($sql);
