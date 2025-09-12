@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/output.css">
     <title>Tubilex Motors</title>
     <link rel="icon" type=" image/png" sizes="42x42" href="favicon.png">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -41,21 +42,21 @@
         <header class="h-14 w-full rounded-full font-medium" x-data="{ open: false }">
             <nav class="w-full h-full flex justify-between items-center relative">
                 <!-- Logo -->
-                <h1 class="text-2xl  font-extrabold  text-white">Tubilex Motors</h1>
+                <a href="#" class="text-2xl  font-extrabold  text-white">Tubilex Motors</a>
 
                 <!-- Desktop Menu -->
                 <ul class="hidden sm:flex gap-3 lg:gap-6 text-white">
                     <li><a href="#about"
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 text-md md:text-lg">About
+                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 text-md md:text-lg">About
                             Us</a></li>
                     <li><a href="#orders"
-                            class="relative hidden md:hidden lg:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Cars</a>
+                            class="relative hidden md:hidden lg:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Cars</a>
                     </li>
                     <li><a href="#services"
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Services</a>
+                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Services</a>
                     </li>
                     <li><a href="#faq"
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">FAQs</a>
+                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">FAQs</a>
                     </li>
 
                 </ul>
@@ -152,8 +153,10 @@
                                     <a href="#contacts" id="contacts-link">Contact Us</a>
                                 </li>
 
-                                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
-                                    target="_blank" rel="noopener"
+                                <a
+                                    href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
+                                    target="_blank"
+                                    rel="noopener"
                                     class="text-white bg-gradient-to-tr from-[#f45516] to-[#ff6324] rounded-full font-semibold px-4 py-2 text-center cursor-pointer">Order Now</a>
 
                             </ul>
@@ -162,10 +165,10 @@
                     </div>
                 </div>
                 <!-- Cart -->
-                <div class="relative  mx-4">
-
-                    <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
-                        target="_blank" rel="noopener"
+                <div class="relative hidden sm:block  mx-4">
+                    <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
+                        target="_blank"
+                        rel="noopener"
                         class=" w-auto h-full bg-gray-900 px-4 py-2 text-white rounded-full flex items-center justify-center opacity-100 ">
                         Order Now
                     </a>
@@ -176,7 +179,7 @@
     <!-- Hero Section -->
     <div class="relative w-full h-[85vh] z-0">
         <!-- Gradient Overlay -->
-        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f36428] to-transparent z-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f36428] to-[#f36428]/30 z-10"></div>
 
         <!-- Background Image -->
         <img src="images/0002.jpg" alt="img" class="w-full h-full object-cover z-0">
@@ -185,7 +188,7 @@
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 transform -translate-y-1/2 z-20 w-full h-auto px-6 sm:px-20">
             <h1 class="text-center text-[56px]/14 sm:text-7xl lg:text-[78px] text-white font-black italic">
                 Miliki Gari zuri, <br />
-                Endesha Kwa Amani.
+                Endesha Kwa <span id="autoType"></span>
             </h1>
         </div>
     </div>
@@ -198,7 +201,7 @@
                 Want to drive your dream car today?
             </h1>
             <div class="flex gap-2 flex-row items-center">
-                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="cursor-pointer px-4 py-1 bg-white text-md font-medium text-center">Book a
                     Car</a>
@@ -288,7 +291,7 @@
                     class="mt-6 inline-block bg-green-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-600 shadow-lg transition duration-300">
                     📱 Chat with us on WhatsApp
                 </a> -->
-                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="absolute top-80 z-60 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
@@ -299,7 +302,7 @@
                 </div>
                 <img src="./images/000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
 
-                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
@@ -309,7 +312,7 @@
                     class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
                 <img src="./images/01.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
@@ -319,7 +322,7 @@
                     class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
                 <img src="./images/000000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
@@ -329,7 +332,7 @@
                     class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
                 <img src="./images/0000000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
@@ -729,6 +732,15 @@
         2025
         Tubilex Motors. All rights reserved. </p>
     <!-- scripts -->
+    <script>
+        var typed = new Typed("#autoType", {
+            strings: ["Amani.", "Furaha.", "Uhuru.", ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            backDelay: 2000,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
