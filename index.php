@@ -27,15 +27,16 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .ubuntu {
+        .Exo {
             font-family: "Exo", sans-serif;
         }
     </style>
 </head>
 
-<body class="ubuntu text-gray-900">
+<body class="Exo text-gray-900">
     <!-- header -->
-    <div class="absolute top-0 left-0 z-10 w-full h-auto pb-10 px-4 md:px-10 lg:px-20 py-2 lg:py-3 space-y-10 ">
+    <!-- header -->
+    <div class="absolute top-0 left-0 z-80 w-full h-auto pb-10 px-4 md:px-10 lg:px-20 py-2 lg:py-3 space-y-10 ">
         <!-- navigations -->
         <header class="h-14 w-full rounded-full font-medium" x-data="{ open: false }">
             <nav class="w-full h-full flex justify-between items-center relative">
@@ -43,12 +44,13 @@
                 <h1 class="text-2xl  font-extrabold  text-white">Tubilex Motors</h1>
 
                 <!-- Desktop Menu -->
-                <ul class="hidden md:flex gap-3 lg:gap-6 text-white">
+                <ul class="hidden sm:flex gap-3 lg:gap-6 text-white">
                     <li><a href="#about"
                             class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 text-md md:text-lg">About
                             Us</a></li>
                     <li><a href="#orders"
-                            class="relative hidden md:hidden lg:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Cars</a></li>
+                            class="relative hidden md:hidden lg:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Cars</a>
+                    </li>
                     <li><a href="#services"
                             class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-yellow-300 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Services</a>
                     </li>
@@ -57,16 +59,14 @@
                     </li>
 
                 </ul>
-                <div class="flex md:hidden ">
+                <div class="flex sm:hidden ">
                     <button @click="open = !open" class=" flex md:hidden pr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="h-6 w-6 text-black">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                         </svg>
                     </button>
                     <div x-show="open" x-transition:enter.duration.300ms x-transition:leave.duration.400ms
-                        class="fixed top-0 right-0 w-full h-full bg-black/80 flex justify-center items-center  gap-4  z-50 ">
+                        class="fixed top-0 right-0 w-full h-full bg-black/80 flex justify-center items-center  gap-4  z-80 ">
                         <div @click="open = !open" class="absolute top-0 right-0 w-full h-full "></div>
                         <div @click="open = !open" class="absolute top-0 pt-20 right-0 w-[80%] h-full bg-white">
                             <ul class="flex flex-col gap-4 px-6 py-3">
@@ -152,49 +152,58 @@
                                     <a href="#contacts" id="contacts-link">Contact Us</a>
                                 </li>
 
-                                <a href="https://quickdropapp.phixtz.com/"
-                                    class="text-white bg-gradient-to-tr from-[#f45516] to-[#ff6324] rounded-full font-semibold px-4 py-2 text-center cursor-pointer">Join
-                                    Us</a>
-                                <a href="https://quickdropapp.phixtz.com/"
-                                    class="text-white bg-gradient-to-tr from-[#f45516] to-[#ff6324] rounded-full font-semibold px-4 py-2 text-center cursor-pointer">Shop
-                                    Now</a>
+                                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                                    target="_blank" rel="noopener"
+                                    class="text-white bg-gradient-to-tr from-[#f45516] to-[#ff6324] rounded-full font-semibold px-4 py-2 text-center cursor-pointer">Order Now</a>
+
                             </ul>
                         </div>
 
                     </div>
-
                 </div>
                 <!-- Cart -->
-                <div class="relative group hidden md:inline-block mx-4">
+                <div class="relative  mx-4">
 
-                    <a href="#contacts"
+                    <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                        target="_blank" rel="noopener"
                         class=" w-auto h-full bg-gray-900 px-4 py-2 text-white rounded-full flex items-center justify-center opacity-100 ">
-                        Contact
-                        Us
+                        Order Now
                     </a>
                 </div>
             </nav>
         </header>
     </div>
-    <div class="relative w-full h-[85vh] z-0  ">
+    <!-- Hero Section -->
+    <div class="relative w-full h-[85vh] z-0">
+        <!-- Gradient Overlay -->
         <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f36428] to-transparent z-10"></div>
-        <img src="images/pexels-tdcat-70912.jpg" alt="img" class="w-full h-full object-cover z-0">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 transform z-10  -translate-y-1/2 h-auto w-full">
-            <h1
-                class="  text-center   text-7xl text-white font-black italic">
+
+        <!-- Background Image -->
+        <img src="images/0002.jpg" alt="img" class="w-full h-full object-cover z-0">
+
+        <!-- Hero Text -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 transform -translate-y-1/2 z-20 w-full h-auto px-6 sm:px-20">
+            <h1 class="text-center text-[56px]/14 sm:text-7xl lg:text-[78px] text-white font-black italic">
                 Miliki Gari zuri, <br />
-                Endesha Kwa Amani.</h1>
-            <!-- <button class="px-4 py-2 mt-4 bg-[#f36428] text-white rounded-full text-center">Get Started</button> -->
-        </div>
-        <!-- <div></div> -->
-    </div>
-    <div class="absolute bottom-16  w-full h-25 px-5 sm:px-10 md:px-20  lg:px-40 ">
-        <div class="px-10 shadow-2xl bg-[#f36428] h-full w-full rounded-sm flex items-center justify-between py-2 ">
-            <h1 class="text-xl sm:text-2xl font-bold text-white/90 w-1/2">Want to drive your dream car today?
+                Endesha Kwa Amani.
             </h1>
-            <div class="flex gap-2 flex-col md:flex-row ">
-                <a href="#contacts" class="cursor-pointer px-4 py-1 bg-white text-md font-medium text-center ">Book a Car</a>
-                <a href="#contacts" class="cursor-pointer px-4 py-1.5 bg-white text-md font-medium text-center ">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Orange Container (Now below hero, not inside it) -->
+    <div class="relative w-full px-5 sm:px-10 md:px-20 lg:px-40 -mt-10  z-20">
+        <div
+            class="px-6 sm:px-10 shadow-2xl bg-[#f36428] w-full rounded-sm flex flex-col sm:flex-row items-center justify-between py-6 gap-4">
+            <h1 class="text-xl sm:text-2xl font-bold text-white/90 md:w-1/2 text-center md:text-left">
+                Want to drive your dream car today?
+            </h1>
+            <div class="flex gap-2 flex-row items-center">
+                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                    target="_blank" rel="noopener"
+                    class="cursor-pointer px-4 py-1 bg-white text-md font-medium text-center">Book a
+                    Car</a>
+                <a href="#contacts" class="cursor-pointer px-4 py-1 bg-white text-md font-medium text-center">Contact
+                    Us</a>
             </div>
         </div>
     </div>
@@ -218,7 +227,8 @@
             the global automotive market.
         </p>
     </div>
-    <div class="flex flex-col sm:flex-row gap-3 md:gap-4 lg:gap-6 py-15 md:py-24 lg:py-30 bg-[#CC5228]/10 px-10 md:px-20 lg:px-30">
+    <div
+        class="flex flex-col sm:flex-row gap-3 md:gap-4 lg:gap-6 py-15 md:py-24 lg:py-30 bg-[#CC5228]/10 px-10 md:px-20 lg:px-30">
         <!-- vision -->
         <div
             class="scroll flex flex-col justify-center bg-[#f36428]  border-l-4 border-white p-6 rounded-2xl z-40 items-center gap-5 shadow-2xl">
@@ -234,7 +244,8 @@
 
                 <h1 class="text-3xl md:text-4xl font-bold text-white z-40">Vision</h1>
             </div>
-            <p class="text-sm sm:text-md md:text-lg font-medium text-white z-40 text-center pb-4">To be a trust leader in the automotive
+            <p class="text-sm sm:text-md md:text-lg font-medium text-white z-40 text-center pb-4">To be a trust leader
+                in the automotive
                 industry, recognized for innovation, reliability, and
                 exceptional customer service.</p>
         </div>
@@ -252,73 +263,82 @@
                 </svg>
                 <h1 class="text-3xl md:text-4xl font-bold text-white z-40">Mission</h1>
             </div>
-            <p class="text-sm sm:text-md md:text-lg font-medium text-white z-40 text-center pb-4">We are committed to provide clients with
+            <p class="text-sm sm:text-md md:text-lg font-medium text-white z-40 text-center pb-4">We are committed to
+                provide clients with
                 exceptional automotive products and services that
                 exceed expectations.</p>
         </div>
     </div>
-
-
     <!-- orders -->
-    <div id="orders" class="flex flex-col p-10 md:p-16  pt-14">
+    <div id="orders" class="relative flex flex-col px-3 sm:px-8 md:px-10  pt-14">
         <div class="h-20 w-full  grid place-content-center pb-20 pt-10 place-items-center gap-3">
             <h1 class="text-center text-3xl font-bold text-gray-900">Check your dream Car and Order now</h1>
             <div class="h-1 w-18 bg-[#ff6324] "></div>
         </div>
-        <div
-            class="flex  gap-4 h-100 w-full overflow-x-scroll  snap-x snap-mandatory  ">
-            <div class="relative rounded-3xl min-w-100 h-full">
+        <!-- <div class="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-70"></div>
+        <div class="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-70"></div> -->
+        <div class="relative flex  gap-4 h-100 w-full overflow-x-scroll  snap-x snap-mandatory  ">
+            <div class="relative rounded-xl min-w-80 h-full">
                 <div
-                    class="absolute top-0 left-0 w-full h-full rounded-3xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
+                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
-                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-3xl object-cover">
-                <a
+                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-xl object-cover">
+                <!-- <a href="https://wa.me/255741760208?text=Hello%20I%20am%20interested%20in%20your%20honey%20products"
+                    target="_blank" rel="noopener"
+                    class="mt-6 inline-block bg-green-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-600 shadow-lg transition duration-300">
+                    📱 Chat with us on WhatsApp
+                </a> -->
+                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                    target="_blank" rel="noopener"
+                    class="absolute top-80 z-60 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
+                    Order Now </a>
+            </div>
+            <div class="relative rounded-3xl min-w-80 h-full">
+                <div
+                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
+                </div>
+                <img src="./images/000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
+
+                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                    target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
             </div>
-            <div class="relative rounded-3xl min-w-100 h-full">
+            <div class="relative rounded-xl min-w-80 h-full">
                 <div
-                    class="absolute top-0 left-0 w-full h-full rounded-3xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
+                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
-                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-3xl object-cover">
-                <a
+                <img src="./images/01.jpg" alt="" class="w-full h-full rounded-xl object-cover">
+                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                    target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
             </div>
-            <div class="relative rounded-3xl min-w-100 h-full">
+            <div class="relative rounded-xl min-w-80 h-full">
                 <div
-                    class="absolute top-0 left-0 w-full h-full rounded-3xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
+                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
-                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-3xl object-cover">
-                <a
+                <img src="./images/000000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
+                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                    target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
             </div>
-            <div class="relative rounded-3xl min-w-100 h-full">
+            <div class="relative rounded-xl min-w-80 h-full">
                 <div
-                    class="absolute top-0 left-0 w-full h-full rounded-3xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
+                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
-                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-3xl object-cover">
-                <a
-                    class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
-                    Order Now </a>
-            </div>
-            <div class="relative rounded-3xl min-w-100 h-full">
-                <div
-                    class="absolute top-0 left-0 w-full h-full rounded-3xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
-                </div>
-                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-3xl object-cover">
-                <a
+                <img src="./images/0000000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
+                <a href="https://wa.me/255788835182?Hello%20I%20am%20interested%20in%20your%20cars.%20Could%20you%20please%20share%20more%20details%20about%20your%20services%20and%20available%20options%3F"
+                    target="_blank" rel="noopener"
                     class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
                     Order Now </a>
             </div>
         </div>
     </div>
-
-
     <!-- Our Services -->
     <div id="services"
-        class="relative w-full h-auto py-20 flex flex-col justify-center items-center gap-6 md:gap-10 md:px-6 lg:px-8">
+        class="relative w-full h-auto py-20 flex flex-col justify-center items-center gap-6 md:gap-10 px-4 md:px-6 lg:px-8">
         <!-- <h1 class="text-5xl font-extrabold  py-4">Our Services</h1> -->
         <div class="flex justify-center items-center w-full gap-4">
             <div class="w-[40px] md:w-[60px] h-[2px] md:h-[6px] bg-[#f36428]"></div>
@@ -327,7 +347,8 @@
             </h1>
             <div class="w-[40px] md:w-[60px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
         </div>
-        <div class="grid grid-cols-1 grid-rows-3 sm:grid-rows-1 sm:grid-cols-3  justify-center items-center gap-4 lg:gap-7 sm:px-4 lg:px-6">
+        <div
+            class="grid grid-cols-1 grid-rows-3 sm:grid-rows-1 sm:grid-cols-3  justify-center items-center gap-4 lg:gap-7 sm:px-4 lg:px-6">
             <a href="#">
                 <div
                     class="relative max-w-[25rem] lg:max-w-[22rem] h-[400px] flex flex-col bg-gradient-to-t from-transparent to-[#f36428]/60 rounded-xl transition-all duration-300 hover:scale-105">
@@ -395,7 +416,6 @@
             </a>
         </div>
     </div>
-
     <!-- core values -->
     <div class="w-full h-auto  px-10 md:px-25 py-15 pb-25 bg-[#f36428]/10">
         <div class="flex justify-center items-center w-full gap-4 pb-14">
@@ -452,207 +472,196 @@
             </div>
         </div>
     </div>
-
     <div class="w-full h-50 mt-30">
         <img src="images/11.jpg" alt="" class="w-[45rem] h-auto object-cover" />
     </div>
-
-
     <!-- fAQ -->
     <div id="faq" x-data="{ open: null }"
         class="flex flex-col gap-4 justify-center items-center pt-30 pb-40 w-full  h-auto ">
         <!-- Title -->
-        <h1 class="text-4xl font-extrabold text-gray-900">FAQs</h1>
+        <h1 class="text-4xl font-extrabold text-[#f36428]">FAQs</h1>
         <div class="h-1 w-14 bg-yellow-300 mb-6"></div>
 
         <div class="overflow-hidden grid grid-cols-1 gap-4 h-full w-full  px-4 sm:px-8 lg:px-18 ">
             <!-- Question 1 -->
             <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200 ">
                 <button @click="open = open === 1 ? null : 1"
-                    class="flex justify-between items-center w-full text-left">
-                    <h1 class="text-md md:text-md md:text-lg font-semibold text-gray-900 ">What types of vehicles does TUBILEX MOTORS offer?</h1>
+                    class="flex justify-between items-center w-full text-left gap-3">
+                    <h1 class="text-md md:text-md md:text-lg font-medium text-gray-700 ">What types of vehicles does
+                        TUBILEX MOTORS offer?</h1>
                     <span>
-                        <svg x-show="open !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <svg x-show="open === 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open === 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
 
                     </span>
                 </button>
-                <div x-show="open === 1" x-transition class="mt-8 text-gray-700">
-                    We specialize in the import and export of high-quality vehicles, including sedans, SUVs, pickups, and luxury cars. Our collection is carefully selected to meet the needs of both individual clients and corporate customers.
+                <div x-show="open === 1" x-transition class="mt-8 text-gray-700 text-sm sm:text-md ">
+                    We specialize in the import and export of high-quality vehicles, including sedans, SUVs, pickups,
+                    and luxury cars. Our collection is carefully selected to meet the needs of both individual clients
+                    and corporate customers.
                 </div>
             </div>
 
             <!-- Question 2 -->
             <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
                 <button @click="open = open === 2 ? null : 2"
-                    class="flex justify-between items-center w-full text-left">
-                    <h1 class="text-md md:text-lg font-semibold text-gray-900">Are the vehicles brand new or used?</h1>
+                    class="flex justify-between items-center w-full text-left gap-3">
+                    <h1 class="text-md md:text-lg font-medium text-gray-700">Are the vehicles brand new or used?</h1>
                     <span>
-                        <svg x-show="open !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <svg x-show="open === 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open === 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
 
                     </span>
                 </button>
-                <div x-show="open === 2" x-transition class="mt-8 text-gray-700">
-                    TUBILEX MOTORS provides both brand-new and certified pre-owned vehicles. Every car is thoroughly inspected to ensure it meets international safety and quality standards before delivery.
+                <div x-show="open === 2" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                    TUBILEX MOTORS provides both brand-new and certified pre-owned vehicles. Every car is thoroughly
+                    inspected to ensure it meets international safety and quality standards before delivery.
                 </div>
             </div>
 
             <!-- Question 3 -->
             <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
                 <button @click="open = open === 3 ? null : 3"
-                    class="flex justify-between items-center w-full text-left">
-                    <h1 class="text-md md:text-lg font-semibold text-gray-900">Can I finance or pay in installments?</h1>
+                    class="flex justify-between items-center w-full text-left gap-3">
+                    <h1 class="text-md md:text-lg font-medium text-gray-700">Can I finance or pay in installments?
+                    </h1>
                     <span>
-                        <svg x-show="open !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <svg x-show="open === 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open === 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
 
                     </span>
                 </button>
-                <div x-show="open === 3" x-transition class="mt-8 text-gray-700">
-                    Yes. We offer flexible payment plans and financing options through our trusted banking and micro-finance partners. Our team will guide you in selecting the best plan that suits your budget.
+                <div x-show="open === 3" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                    Yes. We offer flexible payment plans and financing options through our trusted banking and
+                    micro-finance partners. Our team will guide you in selecting the best plan that suits your budget.
                 </div>
             </div>
 
             <!-- Question 4 -->
             <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
                 <button @click="open = open === 4 ? null : 4"
-                    class="flex justify-between items-center w-full text-left">
-                    <h1 class="text-md md:text-lg font-semibold text-gray-900">Do you provide warranty and after-sales support?</h1>
+                    class="flex justify-between items-center w-full text-left gap-3">
+                    <h1 class="text-md md:text-lg font-medium text-gray-700">Do you provide warranty and after-sales
+                        support?</h1>
                     <span>
-                        <svg x-show="open !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <svg x-show="open === 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open === 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
 
                     </span>
                 </button>
-                <div x-show="open === 4" x-transition class="mt-8 text-gray-700">
-                    Absolutely. All our vehicles come with a warranty package that covers key components. We also provide after-sales support, including maintenance advice and assistance with spare parts.
+                <div x-show="open === 4" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                    Absolutely. All our vehicles come with a warranty package that covers key components. We also
+                    provide after-sales support, including maintenance advice and assistance with spare parts.
                 </div>
             </div>
 
             <!-- Question 5 -->
             <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
                 <button @click="open = open === 5 ? null : 5"
-                    class="flex justify-between items-center w-full text-left">
-                    <h1 class="text-md md:text-lg font-semibold text-gray-900">How long does it take to receive a car once ordered?</h1>
+                    class="flex justify-between items-center w-full text-left gap-3">
+                    <h1 class="text-md md:text-lg font-medium text-gray-700">How long does it take to receive a car
+                        once ordered?</h1>
                     <span>
-                        <svg x-show="open !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <svg x-show="open === 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open === 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
 
                     </span>
                 </button>
-                <div x-show="open === 5" x-transition class="mt-8 text-gray-700">
-                    Delivery time depends on the type of vehicle and your location. For in-stock vehicles, delivery can take as little as 3–7 business days. For special imports, the process may take 4–6 weeks.
+                <div x-show="open === 5" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                    Delivery time depends on the type of vehicle and your location. For in-stock vehicles, delivery can
+                    take as little as 3–7 business days. For special imports, the process may take 4–6 weeks.
                 </div>
             </div>
 
             <!-- Question 6 -->
             <div class="w-full h-auto py-3 px-7 border-b-2 border-gray-200">
                 <button @click="open = open === 6 ? null : 6"
-                    class="flex justify-between items-center w-full text-left">
-                    <h1 class="text-md md:text-lg font-semibold text-gray-900">Does TUBILEX MOTORS help with vehicle registration and insurance?</h1>
+                    class="flex justify-between items-center w-full text-left gap-3">
+                    <h1 class="text-md md:text-lg font-medium text-gray-700">Does TUBILEX MOTORS help with vehicle
+                        registration and insurance?</h1>
                     <span>
-                        <svg x-show="open !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
-                        <svg x-show="open === 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
-                            <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
+                        <svg x-show="open === 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            <path fill-rule="evenodd"
+                                d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
+                                clip-rule="evenodd" />
                         </svg>
 
                     </span>
                 </button>
-                <div x-show="open === 6" x-transition class="mt-8 text-gray-700">
-                    Yes. We offer full assistance with registration, licensing, and insurance to ensure that your car is ready for the road the moment you receive it.
+                <div x-show="open === 6" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                    Yes. We offer full assistance with registration, licensing, and insurance to ensure that your car is
+                    ready for the road the moment you receive it.
                 </div>
             </div>
         </div>
 
 
     </div>
-
-
-    <!-- <footer class="relative w-full h-auto bg-black flex flex-col gap-4 px-12 py-20 border-2">
-        <div class=" grid grid-cols-[1fr_1.5fr]">
-            <div class="relative w-full h-90 ">
-                <div
-                    class="absolute bg-gradient-to-tr from-[#f36428] to-transparent top-0 left-0 w-full h-full rounded-3xl ">
-                </div>
-                <img src="images/8.jpeg" alt="" class="w-full h-full object-cover rounded-3xl">
-            </div>
-            <div id="contact" class=" grid grid-rows-[1fr_1fr_1fr]  py-6 pl-15 gap-4 ">
-                <h1 class="text-3xl font-extrabold text-[#f36428] flex items-center">Contact Us</h1>
-                <input type="text" placeholder="Your Name" class="w-full h-full p-4 bg-white">
-                <input type="text" placeholder="Your Email" class="w-full h-full p-4 bg-white">
-                <textarea placeholder="Write your comment here..." name="textarea" cols="20" rows="3"
-                    class="w-full h-full p-4 bg-white" id=""> Write your comment here...</textarea>
-            </div>
-        </div>
-
-        <div class=" mt-20 flex items-center justify-center">
-            <div class="h-0.5 w-100 bg-white/40"></div>
-        </div>
-
-        <div class=" grid grid-rows-3 place-content-center md:p-18 md:grid-cols-3 md:grid-rows-1">
-            <div class="text-white flex flex-row md:flex-col  justify-center gap-2 ">
-                <h1 class="text-4xl font-extrabold ">Tubilex Motors</h1>
-                <p class="text-md font-normal text-white/50">Miliki Gari zuri,
-                    Endesha Kwa Amani.</p>
-            </div>
-            <div class="text-white flex flex-col  gap-2">
-                <h1 class="text-2xl font-semibold">Quick Links</h1>
-                <div class="h-1 w-8 bg-[#f36428] mb-2"></div>
-                <a href="#" class="text-gray-300 hover:text-white">Home</a>
-                <a href="#about" class="text-gray-300 hover:text-white">About</a>
-                <a href="#services" class="text-gray-300 hover:text-white">Services</a>
-                <a href="#orders" class="text-gray-300 hover:text-white">Cars</a>
-                <a href="#contact" class="text-gray-300 hover:text-white">Contact Us</a>
-            </div>
-            <div class="text-white flex flex-col  gap-2">
-                <h1 class="text-2xl font-semibold">Contact Information</h1>
-                <div class="h-1 w-8 bg-[#f36428] mb-2"></div>
-                <div class="text-gray-300 text-lg/7">
-                    Old Morogoro Road – Mbezi Luis, Ubungo, Dar es-Salaam <br>
-                    P.BOX 30382 Kibaha, Pwani, Tanzania <br>
-                    Phone: +255683522070, <br>
-                    Email: tubilexmotorslimited@gmail.com, <br>
-                    Website: www.tubilex.co.tz
-                </div>
-
-            </div>
-        </div>
-    </footer>
-    <p class="text-white text-center bg-gradient-to-tr from-[#bb3804] to-[#ff6324] p-5 text-xl font-semibold"> 2025. All
-        rights reserved.</p> -->
-
     <!-- contact us -->
-    <div class="h-auto w-full px-4 sm:px-8 md:px-12 py-4 sm:py-8 md:py-12 pb-15 flex items-center justify-center ">
-
-        <div class=" grid grid-cols-1 grid-rows-[1fr_1.5fr] md:grid-cols-[1fr_1.5fr] md:grid-rows-1 w-full h-full bg-gray-100   ">
+    <div id="contacts" class="h-auto w-full px-4 sm:px-8 md:px-12 py-4 sm:py-8 md:py-12 pb-15 flex items-center justify-center ">
+        <div
+            class=" grid grid-cols-1 grid-rows-[1fr_1.5fr] md:grid-cols-[1fr_1.5fr] md:grid-rows-1 w-full h-full bg-gray-100 rounded-t-xl   ">
             <div class="relative w-full h-full block ">
-                <div
-                    class="absolute bg-gradient-to-tr from-[#ff6324]  to-transparent top-0 left-0 w-full h-full  ">
+                <div class="absolute bg-gradient-to-tr from-[#ff6324]  to-transparent top-0 left-0 w-full h-full rounded-t-xl ">
                 </div>
-                <video src="video/1.mp4" autoplay loop muted class="w-full h-full object-cover"></video>
+                <video src="video/1.mp4" autoplay loop muted class="w-full h-auto object-cover  rounded-t-xl"></video>
                 <!-- <img src="images/6.jpeg" alt="" class="w-full h-full object-cover "> -->
             </div>
             <div class=" grid grid-rows-[0.5fr_1fr_1fr_2fr_1fr]    gap-4 px-6 sm:px-12 py-8 sm:py-15 ">
@@ -670,54 +679,56 @@
             </div>
         </div>
     </div>
-
     <!-- footer -->
-    <footer id="contacts"
-        class="relative w-full h-auto bg-black flex flex-col gap-4  border-2">
+    <footer class="relative w-full h-auto bg-black flex flex-col gap-4  border-2">
         <!-- <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-transparent to-[#ff6324]/14 mb-6">
         </div> -->
 
-        <div class=" mt-20 flex items-center justify-center">
-            <div class="h-0.5 w-100 bg-white/40"></div>
+        <div class=" mt-10 flex items-center justify-center">
+            <div class="h-0.5 w-[80vh] bg-white/40"></div>
         </div>
 
-        <div class=" grid grid-cols-[1fr_1fr]  p-0 md:p-18 md:grid-cols-3 md:grid-rows-1 px-6 sm:px-12 py-8 sm:py-20">
-            <div class="text-white hidden md:flex flex-row md:flex-col  ">
-                <h1 class="text-4xl font-extrabold ">Tubilex Motors</h1>
-                <p class="text-md font-normal text-white/50">Miliki Gari zuri,
+        <div
+            class=" grid gap-6 grid-cols-1 grid-rows-[1fr_3fr]  p-0 md:p-18 md:grid-cols-[1fr_2fr] md:grid-rows-1 px-6 sm:px-12 py-8 sm:py-14 md:py-20">
+            <div class="text-white flex gap-2 justify-center items-center flex-col  ">
+                <h1 class="text-2xl md:text-4xl font-extrabold ">Tubilex Motors</h1>
+                <p class="text-sm md:text-md font-normal text-white/50">Miliki Gari zuri,
                     Endesha Kwa Amani.</p>
             </div>
-            <div class="text-white flex flex-col  gap-2">
-                <h1 class="text-xl md:text-2xl font-semibold">Quick Links</h1>
-                <div class="h-1 w-8 bg-[#ff6324] mb-2"></div>
-                <a href="#" class="text-md md:text-lg text-gray-300 hover:text-white">Home</a>
-                <a href="#about" id="about-link" class="text-md md:text-lg text-gray-300 hover:text-white">About</a>
-                <a href="#services" id="services-link" class="text-md md:text-lg text-gray-300 hover:text-white">Services</a>
-                <a href="#faq" id="faqs-link" class="text-md md:text-lg text-gray-300 hover:text-white">Cars</a>
-                <a href="#contacts" id="contacts-link" class="text-md md:text-lg text-gray-300 hover:text-white">Contact Us</a>
-            </div>
-            <div class="text-white flex flex-col  gap-2">
-                <h1 class="text-xl md:text-2xl font-semibold">Location</h1>
-                <div class="h-1 w-8 bg-[#ff6324] mb-2"></div>
-
-                <div class="text-gray-300 text-md md:text-lg/7">
-                    Old Morogoro Road – Mbezi Luis, Ubungo, Dar es-Salaam <br>
-                    P.BOX 30382 Kibaha, Pwani, Tanzania <br>
-                    Phone: +255683522070, <br>
-                    Email: tubilexmotorslimited@gmail.com, <br>
-                    Website: www.tubilex.co.tz
+            <div class="grid grid-cols-[1fr_1fr] h-full w-auto gap-2 md:gap-8">
+                <div class="text-white flex flex-col  gap-2">
+                    <h1 class="text-xl md:text-2xl font-semibold">Quick Links</h1>
+                    <div class="h-1 w-8 bg-[#ff6324] mb-2"></div>
+                    <a href="#" class="text-sm sm:text-lg text-gray-300 hover:text-white">Home</a>
+                    <a href="#about" id="about-link" class="text-sm sm:text-lg text-gray-300 hover:text-white">About</a>
+                    <a href="#services" id="services-link"
+                        class="text-sm sm:text-lg text-gray-300 hover:text-white">Services</a>
+                    <a href="#faq" id="faqs-link" class="text-sm sm:text-lg text-gray-300 hover:text-white">Cars</a>
+                    <a href="#contacts" id="contacts-link"
+                        class="text-sm sm:text-lg text-gray-300 hover:text-white">Contact
+                        Us</a>
                 </div>
+                <div class="text-white flex flex-col  gap-2">
+                    <h1 class="text-xl md:text-2xl font-semibold">Location</h1>
+                    <div class="h-1 w-8 bg-[#ff6324] mb-2"></div>
 
+                    <div class="text-gray-300 text-sm sm:text-lg md:text-lg/7">
+                        Old Morogoro Road – Mbezi Luis, Ubungo, Dar es-Salaam <br>
+                        P.BOX 30382 Kibaha, Pwani, Tanzania <br>
+                        Phone: +255 788 835 182, <br>
+                        Email: tubilexmotorslimited@gmail.com, <br>
+                        Website: www.tubilex.co.tz
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
 
+    </footer>
     <p
-        class="h-auto w-full text-white text-center bg-gradient-to-tr from-[#bb3804] to-[#ff6324] p-5 text-xl font-semibold">
+        class="h-auto w-full text-white text-center bg-gradient-to-tr from-[#bb3804] to-[#ff6324] p-5 text-sm sm:text-md md:text-xl font-semibold">
         2025
         Tubilex Motors. All rights reserved. </p>
     <!-- scripts -->
-
 </body>
 
 </html>
