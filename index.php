@@ -42,8 +42,7 @@
         <header class="h-14 w-full rounded-full font-medium" x-data="{ open: false }">
             <nav class="w-full h-full flex justify-between items-center relative">
                 <!-- Logo -->
-                <a href="#" class="text-2xl  font-extrabold  text-white">Tubilex Motors</a>
-
+                <a href="#" class=" text-2xl sm:text-3xl  font-extrabold  text-white">Tubilex Motors</a>
                 <!-- Desktop Menu -->
                 <ul class="hidden sm:flex gap-3 lg:gap-6 text-white">
                     <li><a href="#about"
@@ -186,10 +185,11 @@
 
         <!-- Hero Text -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 transform -translate-y-1/2 z-20 w-full h-auto px-6 sm:px-20">
-            <h1 class="text-center text-[56px]/14 sm:text-7xl lg:text-[78px] text-white font-black italic">
-                Miliki Gari zuri, <br />
-                Endesha Kwa <span id="autoType"></span>
+            <h1 class="text-center text-6xl sm:text-7xl lg:text-8xl text-white font-black italic">
+                Cars Without <span id="autoType"></span>
             </h1>
+            <p class="text-center text-md sm:text-lg text-white font-medium mt-4">Breaking limits, connecting people,
+                and redefining mobility.</p>
         </div>
     </div>
 
@@ -734,7 +734,7 @@
     <!-- scripts -->
     <script>
         var typed = new Typed("#autoType", {
-            strings: ["Amani.", "Furaha.", "Uhuru.", ],
+            strings: ["Borders."],
             typeSpeed: 60,
             backSpeed: 60,
             backDelay: 2000,
