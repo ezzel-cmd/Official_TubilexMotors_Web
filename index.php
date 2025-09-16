@@ -4,222 +4,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <title>Tubilex Motors</title>
-    <link rel="icon" type=" image/png" sizes="42x42" href="favicon.png">
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet" />
     <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <style>
-        .archivo {
-            font-family: "Archivo", sans-serif;
-            font-optical-sizing: auto;
+        .russo {
+            font-family: "Russo One", sans-serif;
         }
 
-        .poppins {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .Exo {
-            font-family: "Exo", sans-serif;
+        .inter {
+            font-family: "Inter", sans-serif;
         }
     </style>
 </head>
 
-<body class="Exo text-gray-900">
-    <!-- header -->
-    <!-- header -->
-    <div class="absolute top-0 left-0 z-80 w-full h-auto pb-10 px-4 md:px-10 lg:px-20 py-2 lg:py-3 space-y-10 ">
-        <!-- navigations -->
-        <header class="h-14 w-full rounded-full font-medium" x-data="{ open: false }">
-            <nav class="w-full h-full flex justify-between items-center relative">
-                <!-- Logo -->
-                <a href="#" class=" text-2xl sm:text-3xl  font-extrabold  text-white">Tubilex Motors</a>
-                <!-- Desktop Menu -->
-                <ul class="hidden sm:flex gap-3 lg:gap-6 text-white">
-                    <li><a href="#about"
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 text-md md:text-lg">About
-                            Us</a></li>
-                    <li><a href="#orders"
-                            class="relative hidden md:hidden lg:block after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Cars</a>
-                    </li>
-                    <li><a href="#services"
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">Services</a>
-                    </li>
-                    <li><a href="#faq"
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-gray-900 after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100  text-md md:text-lg">FAQs</a>
-                    </li>
+<body class="inter  w-full h-full ">
+    <!-- <header class="h-50 w-full  ">
+        <div
+            class="w-full h-10 bg-gray-950 flex items-center justify-between px-2 sm:px-10 md:px-15 flex-col sm:flex-row">
+            <div class="flex items-center gap-2 text-gray-300 text-sm ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <path fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                        clip-rule="evenodd" />
+                </svg>
 
+                <p>MON - SAT | 8:00AM - 6:00PM</p>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 text-sm ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <path fill-rule="evenodd"
+                        d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p>Mbezi Luis, Dar es salaam, Tz</p>
+
+            </div>
+            <div class="flex items-center gap-2 text-gray-300 text-sm ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <path fill-rule="evenodd"
+                        d="M19.5 9.75a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l4.72-4.72a.75.75 0 1 1 1.06 1.06L16.06 9h2.69a.75.75 0 0 1 .75.75Z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <P>+255 255 255 255</P>
+            </div>
+        </div>
+        <div class="w-full h-25 bg-[#f36428]  flex justify-between items-center px-15">
+            <div></div>
+            <div class="text-white font-bold text-3xl">TUBILEX MOTORS</div>
+            <button class="bg-white text-gray-900 py-1 px-4 rounded-full text-md font-medium">Explore Now</button>
+
+        </div>
+        <nav class="w-full h-15 bg-white flex justify-center items-center px-2 sm:px-10 md:px-15">
+            <ul class="flex items-center justify-center gap-4 sm:gap-6 md:gap-10 flex-col sm:flex-row ">
+                <li><a href="#" class="text-gray-900 hover:text-[#f36428]">Home</a></li>
+                <li><a href="#about" class="text-gray-900 hover:text-[#f36428]">About Us</a></li>
+                <li><a href="#services" class="text-gray-900 hover:text-[#f36428]">Services</a></li>
+                <li><a href="#" class="text-gray-900 hover:text-[#f36428]">Why Choose Us</a></li>
+                <li><a href="#faq" class="text-gray-900 hover:text-[#f36428]">FAQs</a></li>
+                <li><a href="#" class="text-gray-900 hover:text-[#f36428]">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <!-- HEADER -->
+    <header class="w-full">
+        <!-- Top Bar -->
+        <div
+            class="w-full bg-gray-950 flex items-center justify-between px-4 sm:px-10 flex-col  text-sm sm:flex-row gap-2  py-4">
+            <div class="flex items-center gap-2 text-gray-300">
+                <!-- clock svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <path fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p>MON - SAT | 8:00AM - 6:00PM</p>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300">
+                <!-- location svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <path fill-rule="evenodd"
+                        d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p>Mbezi Luis, Dar es salaam, Tz</p>
+            </div>
+            <div class="flex items-center gap-2 text-gray-300">
+                <!-- phone svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                    <path fill-rule="evenodd"
+                        d="M19.5 9.75a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l4.72-4.72a.75.75 0 1 1 1.06 1.06L16.06 9h2.69a.75.75 0 0 1 .75.75Z"
+                        clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                        d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
+                    target="_blank" rel="noopener">+255 788 835 182</a>
+            </div>
+        </div>
+
+        <!-- Logo Bar -->
+        <div class="w-full bg-[#f36428] flex justify-between items-center px-6 sm:px-15 py-4">
+            <div class="hidden sm:block"></div>
+            <div class="text-white font-bold text-2xl sm:text-3xl">TUBILEX MOTORS</div>
+            <a href="#orders"
+                class="cursor-pointer bg-white text-gray-900 py-1 px-4 rounded-full text-sm sm:text-md font-medium transition duration-300 hover:bg-gray-200">
+                Explore Now
+            </a>
+        </div>
+
+        <!-- NAV -->
+        <nav x-data="{ open: false }" class="w-full bg-white flex justify-between items-center px-4 sm:px-10 py-3">
+            <!-- Desktop Menu -->
+            <div class="h-full w-full flex justify-center items-center py-2 px-2">
+
+                <ul class="hidden sm:flex items-center justify-center gap-6 md:gap-10">
+                    <li><a href="#" class="text-gray-900 hover:text-[#f36428]">Home</a></li>
+                    <li><a href="#about" class="text-gray-900 hover:text-[#f36428]">About Us</a></li>
+                    <li><a href="#services" class="text-gray-900 hover:text-[#f36428]">Services</a></li>
+                    <li><a href="#orders" class="text-gray-900 hover:text-[#f36428]">Cars</a></li>
+                    <li><a href="#faq" class="text-gray-900 hover:text-[#f36428]">FAQs</a></li>
+                    <li><a href="#contacts" class="text-gray-900 hover:text-[#f36428]">Contact Us</a></li>
                 </ul>
-                <div class="flex sm:hidden ">
-                    <button @click="open = !open" class=" flex md:hidden pr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="flex sm:hidden justify-center items-center">
+                <button @click="open = !open" class="pr-2">
+                    <!-- hamburger -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 text-gray-900">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Panel -->
+            <div x-show="open" x-transition class="fixed sm:hidden inset-0 bg-black/70 flex justify-end z-50">
+                <div @click.away="open = !open"
+                    class="w-[80%] sm:w-[60%] bg-white h-full flex flex-col py-6 px-6 space-y-4">
+                    <button @click="open = false" class="self-end mb-6">
+                        <!-- close button -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 text-gray-900">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
-                    <div x-show="open" x-transition:enter.duration.300ms x-transition:leave.duration.400ms
-                        class="fixed top-0 right-0 w-full h-full bg-black/80 flex justify-center items-center  gap-4  z-80 ">
-                        <div @click="open = !open" class="absolute top-0 right-0 w-full h-full "></div>
-                        <div @click="open = !open" class="absolute top-0 pt-20 right-0 w-[80%] h-full bg-white">
-                            <ul class="flex flex-col gap-4 px-6 py-3">
-                                <li
-                                    class=" text-sm font-normal text-md flex  items-center pb-2 gap-4  border-b-gray-100 border-b-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-5 text-[#ff6324]">
-                                        <path
-                                            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                                        <path
-                                            d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-                                    </svg>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li
-                                    class=" text-sm font-normal text-md flex items-center pb-2 gap-4  border-b-gray-100 border-b-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-5 text-[#ff6324]">
-                                        <path fill-rule="evenodd"
-                                            d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
-                                            clip-rule="evenodd" />
-                                        <path
-                                            d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                    </svg>
-
-
-                                    <a href="#about" id="about-link">About Us</a>
-                                </li>
-                                <li
-                                    class=" text-sm font-normal text-md flex items-center pb-2 gap-4  border-b-gray-100 border-b-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-5 text-[#ff6324]">
-                                        <path
-                                            d="M9.97.97a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1-1.06 1.06l-1.72-1.72v3.44h-1.5V3.31L8.03 5.03a.75.75 0 0 1-1.06-1.06l3-3ZM9.75 6.75v6a.75.75 0 0 0 1.5 0v-6h3a3 3 0 0 1 3 3v7.5a3 3 0 0 1-3 3h-7.5a3 3 0 0 1-3-3v-7.5a3 3 0 0 1 3-3h3Z" />
-                                        <path
-                                            d="M7.151 21.75a2.999 2.999 0 0 0 2.599 1.5h7.5a3 3 0 0 0 3-3v-7.5c0-1.11-.603-2.08-1.5-2.599v7.099a4.5 4.5 0 0 1-4.5 4.5H7.151Z" />
-                                    </svg>
-
-                                    <a href="#orders" id="work-link">Cars</a>
-                                </li>
-                                <li
-                                    class=" text-sm font-normal text-md flex items-center pb-2 gap-4  border-b-gray-100 border-b-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-5 text-[#ff6324]">
-                                        <path fill-rule="evenodd"
-                                            d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
-                                            clip-rule="evenodd" />
-                                        <path
-                                            d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z" />
-                                        <path fill-rule="evenodd"
-                                            d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-
-                                    <a href="#services" id="services-link">Services</a>
-                                </li>
-                                <li
-                                    class=" text-sm font-normal text-md flex items-center pb-2 gap-4  border-b-gray-100 border-b-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-5 text-[#ff6324]">
-                                        <path
-                                            d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
-                                        <path
-                                            d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
-                                    </svg>
-
-
-                                    <a href="#faq" id="faqs-link">FAQs</a>
-                                </li>
-                                <li
-                                    class=" text-sm font-normal text-md flex items-center pb-2 gap-4  border-b-gray-100 border-b-2 mb-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                        class="size-5 text-[#ff6324]">
-                                        <path fill-rule="evenodd"
-                                            d="M15 3.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V5.56l-4.72 4.72a.75.75 0 1 1-1.06-1.06l4.72-4.72h-2.69a.75.75 0 0 1-.75-.75Z"
-                                            clip-rule="evenodd" />
-                                        <path fill-rule="evenodd"
-                                            d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-
-                                    <a href="#contacts" id="contacts-link">Contact Us</a>
-                                </li>
-
-                                <a
-                                    href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                                    target="_blank"
-                                    rel="noopener"
-                                    class="text-white bg-gradient-to-tr from-[#f45516] to-[#ff6324] rounded-full font-semibold px-4 py-2 text-center cursor-pointer">Order Now</a>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Cart -->
-                <div class="relative hidden sm:block  mx-4">
+                    <a href="#" class="block py-2 border-b border-gray-100 hover:text-[#f36428]">Home</a>
+                    <a href="#about" class="block py-2 border-b border-gray-100 hover:text-[#f36428]">About Us</a>
+                    <a href="#services" class="block py-2 border-b border-gray-100 hover:text-[#f36428]">Services</a>
+                    <a href="#orders" class="block py-2 border-b border-gray-100 hover:text-[#f36428]">Cars</a>
+                    <a href="#faq" class="block py-2 border-b border-gray-100 hover:text-[#f36428]">FAQs</a>
+                    <a href="#contacts" class="block py-2 border-b border-gray-100 hover:text-[#f36428]">Contact Us</a>
                     <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                        target="_blank"
-                        rel="noopener"
-                        class=" w-auto h-full bg-gray-900 px-4 py-2 text-white rounded-full flex items-center justify-center opacity-100 ">
+                        target="_blank" rel="noopener"
+                        class="mt-6 text-white bg-gradient-to-tr from-[#f45516] to-[#ff6324] rounded-full font-semibold px-4 py-2 text-center">
                         Order Now
                     </a>
                 </div>
-            </nav>
-        </header>
-    </div>
-    <!-- Hero Section -->
-    <div class="relative w-full h-[85vh] z-0">
-        <!-- Gradient Overlay -->
-        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#f36428] to-[#f36428]/30 z-10"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="relative w-full h-150 bg-white   ">
+        <div class="absolute top-0 left-0 h-full w-full px-2 sm:px-8 ">
 
-        <!-- Background Image -->
-        <img src="images/0002.jpg" alt="img" class="w-full h-full object-cover z-0">
-
-        <!-- Hero Text -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 transform -translate-y-1/2 z-20 w-full h-auto px-6 sm:px-20">
-            <h1 class="text-center text-6xl sm:text-7xl lg:text-8xl text-white font-black italic">
-                Cars Without <span id="autoType"></span>
-            </h1>
-            <p class="text-center text-md sm:text-lg text-white font-medium mt-4">Breaking limits, connecting people,
-                and redefining mobility.</p>
-        </div>
-    </div>
-
-    <!-- Orange Container (Now below hero, not inside it) -->
-    <div class="relative w-full px-5 sm:px-10 md:px-20 lg:px-40 -mt-10  z-20">
-        <div
-            class="px-6 sm:px-10 shadow-2xl bg-[#f36428] w-full rounded-sm flex flex-col sm:flex-row items-center justify-between py-6 gap-4">
-            <h1 class="text-xl sm:text-2xl font-bold text-white/90 md:w-1/2 text-center md:text-left">
-                Want to drive your dream car today?
-            </h1>
-            <div class="flex gap-2 flex-row items-center">
-                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                    target="_blank" rel="noopener"
-                    class="cursor-pointer px-4 py-1 bg-white text-md font-medium text-center">Book a
-                    Car</a>
-                <a href="#contacts" class="cursor-pointer px-4 py-1 bg-white text-md font-medium text-center">Contact
-                    Us</a>
+            <!-- <h1 class="text-7xl font-bold text-white absolute bottom-0 left-0 right-0 text-start z-10 px-18 py-6">Cars <br> Without Borders</h1> -->
+            <img src=" images/jeep-wrangler-sunset-adventure.jpg" alt=""
+                class="w-full h-full object-cover rounded-3xl opacity-80 z-0">
+            <!-- <video src="video/2.mp4" autoplay loop muted  class="w-full h-full object-cover rounded-3xl opacity-80 z-0 "></video> -->
+            <div class="relative w-full px-10 sm:px-10 md:px-20 lg:px-40 -mt-50 lg:-mt-40  z-10">
+                <div
+                    class="px-4 sm:px-10 shadow-lg hover:shadow-2xl hover:scale-102 duration-200 ease-in bg-white w-full rounded-sm flex flex-col md:flex-row items-center justify-between py-5 sm:py-6 gap-4">
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-950/80 md:w-1/2 text-center md:text-left">
+                        Want to drive your dream car today?
+                    </h1>
+                    <div class="flex gap-2 flex-row items-center">
+                        <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
+                            target="_blank" rel="noopener"
+                            class="cursor-pointer px-4 py-1 bg-[#f36428] text-md font-medium text-center text-white">Book
+                            a
+                            Car</a>
+                        <a href="#contacts"
+                            class="cursor-pointer px-4 py-1 bg-[#f36428] text-md font-medium text-center text-white">Contact
+                            Us</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div
+        class="bg-white text-4xl sm:text-5xl lgtext-6xl  italic font-extrabold text-[#f36428]/60 flex justify-center items-center h-40 text-center">
+        Cars
+        Without Borders...</div>
+
+    <section id="orders" class="w-full h-auto bg-gray-950 flex flex-col place-content-center place-items-center gap-6 py-18">
+        <h1 class="text-3xl font-bold text-white">Explore All vehicles</h1>
+        <div class="w-10 h-0.5 bg-[#f36428]"></div>
+
+        <div class="h-auto w-full flex justify-center items-center gap-5 flex-wrap ">
+
+            <!-- Jeep Wrangler -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-400 ease-in-out shadow-2xl">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/000000.jpg" alt="Jeep Wrangler"
+                        class="w-full h-full object-cover transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Jeep Wrangler</h2>
+                    <p class="text-sm text-gray-600">Iconic off-road SUV built for adventure and rugged terrains.</p>
+                    <button class="cursor-pointer mt-2 px-3 py-1 bg-[#f36428] text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Mercedes-Benz GLE -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/00000.jpg" alt="Mercedes-Benz GLE"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Mercedes-Benz GLE</h2>
+                    <p class="text-sm text-gray-600">Luxury SUV with advanced technology and premium comfort.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Convertible (Sunset shot) -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/000.jpg" alt="Convertible"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Luxury Convertible</h2>
+                    <p class="text-sm text-gray-600">Open-top driving with style — perfect for scenic routes.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Land Rover Defender -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/Power, precision, and presence — the Defender 130.jpg" alt="Land Rover Defender"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Land Rover Defender</h2>
+                    <p class="text-sm text-gray-600">Rugged yet refined — the ultimate off-road capability.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Range Rover -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/Range Rover SV.jpg" alt="Range Rover"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Range Rover</h2>
+                    <p class="text-sm text-gray-600">Prestige, comfort, and unmatched luxury performance.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Toyota Corolla -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/0000000.jpg" alt="Toyota Corolla"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Toyota Corolla</h2>
+                    <p class="text-sm text-gray-600">Reliable, efficient, and designed for everyday driving.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Ferrari 458 Italia -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/002.jpg" alt="Ferrari 458 Italia"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Ferrari 458 Italia</h2>
+                    <p class="text-sm text-gray-600">Exhilarating speed and iconic Italian supercar design.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+            <!-- Dodge Ram Truck -->
+            <a href="#" class="h-85 w-80 bg-white p-2 gap-2 transform hover:scale-102 duration-500 ease-in-out">
+                <div class="h-[60%] w-full overflow-hidden">
+                    <img src="images/00001.jpg" alt="Dodge Ram Truck"
+                        class="w-full h-full object-cover  transform hover:scale-105 duration-400 ease-in-out ">
+                </div>
+                <div class="h-[40%] w-full flex flex-col justify-between p-2">
+                    <h2 class="text-lg font-semibold text-gray-900">Dodge Ram</h2>
+                    <p class="text-sm text-gray-600">Powerful pickup designed for strength, towing, and hauling.</p>
+                    <button class="mt-2 px-3 py-1 bg-[#f36428] cursor-pointer text-white text-sm rounded hover:bg-[#d9531e]">
+                        order now
+                    </button>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
     <!-- about us -->
     <div id="about"
-        class=" w-full h-auto flex flex-col justify-center items-center text-center px-10 md:px-25 pt-30 md:pt-40 lg:pt-60 pb-20 md:pb-25 lg:pb-30 gap-6">
+        class="relative w-full h-auto flex flex-col justify-center items-center gap-6 text-center px-10 md:px-50 py-20 sm:py-30">
+        <img src="images/000001.jpg" alt="" class="fixed top-0 left-0 right-0 w-full h-full object-cover -z-10">
+        <div class="absolute top-0 left-0 right-0 w-full h-full bg-white/90 -z-5"></div>
+
         <div class="flex justify-center items-center w-full gap-4">
-            <div class="w-[40px] md:w-[60px] h-[2px] md:h-[4px] bg-gray-900"></div>
+            <div class="w-[40px]  h-[2px] md:h-[4px] bg-gray-900"></div>
             <h1 class="text-3xl md:text-4xl font-bold text-[#f36428] ">
-                Overview
+                About Us
             </h1>
-            <div class="w-[40px] md:w-[60px] h-[2px] md:h-[4px] bg-gray-900"></div>
+            <div class="w-[40px]  h-[2px] md:h-[4px] bg-gray-900"></div>
         </div>
         <p class="text-sm sm:text-md md:text-lg text-gray-800 font-medium">
             TUBILEX MOTORS COMPANY LIMITED is a quality company specializing in the import and
@@ -230,14 +360,16 @@
             the global automotive market.
         </p>
     </div>
+    <div class="w-full h-80"></div>
+
     <div
-        class="flex flex-col sm:flex-row gap-3 md:gap-4 lg:gap-6 py-15 md:py-24 lg:py-30 bg-[#CC5228]/10 px-10 md:px-20 lg:px-30">
+        class="flex flex-col sm:flex-row gap-3 md:gap-4 lg:gap-6 py-15 md:py-24 lg:py-30 bg-[#f36428] px-10 md:px-20 lg:px-40">
         <!-- vision -->
         <div
-            class="scroll flex flex-col justify-center bg-[#f36428]  border-l-4 border-white p-6 rounded-2xl z-40 items-center gap-5 shadow-2xl">
+            class="scroll flex flex-col justify-center bg-gray-950  border-l-4 border-white p-6 rounded-2xl z-40 items-center gap-5 shadow-2xl">
             <div class="flex flex-col gap-4 justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-14 text-gray-900">
+                    class="size-14 text-[#f36428]">
                     <path
                         d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
                     <path fill-rule="evenodd"
@@ -247,17 +379,17 @@
 
                 <h1 class="text-3xl md:text-4xl font-bold text-white z-40">Vision</h1>
             </div>
-            <p class="text-sm sm:text-md md:text-lg font-medium text-white z-40 text-center pb-4">To be a trust leader
+            <p class="text-sm sm:text-md md:text-lg font-normal text-white/70 z-40 text-center pb-4">To be a trust leader
                 in the automotive
                 industry, recognized for innovation, reliability, and
                 exceptional customer service.</p>
         </div>
         <!-- mission -->
         <div
-            class="scroll flex flex-col justify-center bg-[#f36428]  border-l-4 border-white  p-8 rounded-2xl z-40 items-center gap-5 shadow-2xl ">
+            class="scroll flex flex-col justify-center bg-gray-950  border-l-4 border-white  p-8 rounded-2xl z-40 items-center gap-5 shadow-2xl ">
             <div class="flex flex-col gap-4 justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="size-14 text-gray-900">
+                    class="size-14 text-[#f36428]">
                     <path fill-rule="evenodd"
                         d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"
                         clip-rule="evenodd" />
@@ -266,31 +398,26 @@
                 </svg>
                 <h1 class="text-3xl md:text-4xl font-bold text-white z-40">Mission</h1>
             </div>
-            <p class="text-sm sm:text-md md:text-lg font-medium text-white z-40 text-center pb-4">We are committed to
+            <p class="text-sm sm:text-md md:text-lg font-normal text-white/70 z-40 text-center pb-4">We are committed to
                 provide clients with
                 exceptional automotive products and services that
                 exceed expectations.</p>
         </div>
     </div>
     <!-- orders -->
-    <div id="orders" class="relative flex flex-col px-3 sm:px-8 md:px-10  pt-14">
+    <!-- <div id="orders" class="relative flex flex-col px-3 sm:px-8 md:px-10  pt-14">
         <div class="h-20 w-full  grid place-content-center pb-20 pt-10 place-items-center gap-3">
             <h1 class="text-center text-3xl font-bold text-gray-900">Check your dream Car and Order now</h1>
             <div class="h-1 w-18 bg-[#ff6324] "></div>
         </div>
-        <!-- <div class="absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-70"></div>
-        <div class="absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-70"></div> -->
+
         <div class="relative flex  gap-4 h-100 w-full overflow-x-scroll  snap-x snap-mandatory  ">
             <div class="relative rounded-xl min-w-80 h-full">
                 <div
                     class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
                 </div>
                 <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-xl object-cover">
-                <!-- <a href="https://wa.me/255741760208?text=Hello%20I%20am%20interested%20in%20your%20honey%20products"
-                    target="_blank" rel="noopener"
-                    class="mt-6 inline-block bg-green-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-600 shadow-lg transition duration-300">
-                    📱 Chat with us on WhatsApp
-                </a> -->
+               
                 <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
                     target="_blank" rel="noopener"
                     class="absolute top-80 z-60 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
@@ -338,26 +465,26 @@
                     Order Now </a>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Our Services -->
     <div id="services"
-        class="relative w-full h-auto py-20 flex flex-col justify-center items-center gap-6 md:gap-10 px-4 md:px-6 lg:px-8">
+        class="relative w-full h-auto py-20 flex flex-col justify-center items-center gap-6 md:gap-10 px-4 md:px-6 lg:px-8 bg-white">
         <!-- <h1 class="text-5xl font-extrabold  py-4">Our Services</h1> -->
         <div class="flex justify-center items-center w-full gap-4">
-            <div class="w-[40px] md:w-[60px] h-[2px] md:h-[6px] bg-[#f36428]"></div>
+            <div class="w-[40px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
             <h1 class="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900">
                 Our Services
             </h1>
-            <div class="w-[40px] md:w-[60px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
+            <div class="w-[40px]  h-[2px] md:h-[4px] bg-[#f36428]"></div>
         </div>
-        <div
-            class="grid grid-cols-1 grid-rows-3 sm:grid-rows-1 sm:grid-cols-3  justify-center items-center gap-4 lg:gap-7 sm:px-4 lg:px-6">
+        <!-- <div class="grid grid-cols-1 grid-rows-3 sm:grid-rows-1 sm:grid-cols-3  justify-center items-center gap-4 lg:gap-7 sm:px-4 lg:px-6"> -->
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 lg:gap-7 sm:px-4 lg:px-6">
             <a href="#">
                 <div
-                    class="relative max-w-[25rem] lg:max-w-[22rem] h-[400px] flex flex-col bg-gradient-to-t from-transparent to-[#f36428]/60 rounded-xl transition-all duration-300 hover:scale-105">
+                    class="relative  w-80 lg:w-90  h-90 flex flex-col bg-white shadow-xl shadow-[#f36428]/20 hover:shadow-2xl rounded-xl transition-all duration-300 hover:scale-105">
                     <!-- Image container -->
                     <div class="relative w-full h-[50%] rounded-t-lg overflow-hidden">
-                        <img src="images/3.jpg" alt="Image of a person"
+                        <img src="images/cargo-delivery-vehicle.jpg" alt="Image of a person"
                             class="rounded-t-lg object-cover w-full h-full transition-transform duration-300 group-hover:scale-120" />
                     </div>
 
@@ -375,10 +502,10 @@
             </a>
             <a href="#">
                 <div
-                    class="relative max-w-[25rem] lg:max-w-[22rem] h-[400px] flex flex-col bg-gradient-to-t from-transparent to-[#f36428]/60 rounded-xl transition-all duration-300 hover:scale-105">
+                    class="relative w-80 lg:w-90  h-90 flex flex-col bg-white shadow-xl shadow-[#f36428]/20 hover:shadow-2xl rounded-xl transition-all duration-300 hover:scale-105">
                     <!-- Image container -->
                     <div class="relative w-full h-[50%] rounded-t-lg overflow-hidden">
-                        <img src="images/5.jpeg" alt="Image of a person"
+                        <img src="images/different-car-accessories-composition.jpg" alt="Image of a person"
                             class="rounded-t-lg object-cover w-full h-full transition-transform duration-300 group-hover:scale-120" />
                     </div>
 
@@ -397,10 +524,10 @@
             </a>
             <a href="#">
                 <div
-                    class="relative max-w-[25rem] lg:max-w-[22rem] h-[400px] flex flex-col bg-gradient-to-t from-transparent to-[#f36428]/60 rounded-xl transition-all duration-300 hover:scale-105">
+                    class="relative w-80 lg:w-90  h-90 flex flex-col bg-white shadow-xl shadow-[#f36428]/20 hover:shadow-2xl rounded-xl transition-all duration-300 hover:scale-105">
                     <!-- Image container -->
                     <div class="relative w-full h-[50%] rounded-t-lg overflow-hidden">
-                        <img src="images/8.jpeg" alt="Image of a person"
+                        <img src="images/employee-listens-client-car-request.jpg" alt="Image of a person"
                             class="rounded-t-lg object-cover w-full h-full transition-transform duration-300 group-hover:scale-120" />
                     </div>
 
@@ -411,26 +538,28 @@
                         </h1>
                         <p class="text-sm md:text-md font-medium text-gray-900/70 pt-1">
                             Expert advice on vehicle and spare part selection tailored to
-                            individual or business requirements.nd models. Comprehensive
-                            inventory to meet diverse client needs.
+                            individual or business requirements.
                         </p>
                     </div>
                 </div>
             </a>
+
+
         </div>
     </div>
     <!-- core values -->
-    <div class="w-full h-auto  px-10 md:px-25 py-15 pb-25 bg-[#f36428]/10">
+    <div class="w-full h-auto  px-10 md:px-25 py-15 pb-25 bg-white/90 ">
+
         <div class="flex justify-center items-center w-full gap-4 pb-14">
-            <div class="w-[40px] md:w-[60px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
+            <div class="w-[40px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
             <h1 class="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900">
                 Core Values
             </h1>
-            <div class="w-[40px] md:w-[60px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
+            <div class="w-[40px] h-[2px] md:h-[4px] bg-[#f36428]"></div>
         </div>
         <div class="w-full h-auto flex flex-col md:grid md:grid-cols-2 gap-6">
             <div
-                class="place-self-end space-y-4 bg-[#f36428] shadow-xl shadow-[#f36428]/20   rounded-lg flex flex-col rounded-br-[80px] w-full md:max-w-120 min-h-40 max-h-auto pb-10">
+                class="place-self-end space-y-4 bg-[#f36428] shadow-xl shadow-[#f36428]/20   rounded-lg flex flex-col rounded-br-[80px] w-full md:max-w-150 min-h-40 max-h-auto pb-10">
                 <div class="px-7 md:px-10 pt-6 md:pt-8 gap-2 flex flex-col">
                     <h1 class="text-2xl md:text-3xl font-bold text-white">
                         Integrity
@@ -441,7 +570,7 @@
                 </div>
             </div>
             <div
-                class="place-self-start space-y-4 bg-gray-900 shadow-xl shadow-[#f36428]/20 rounded-lg flex flex-col rounded-bl-[80px] w-full md:max-w-120 min-h-40 max-h-auto pb-10">
+                class="place-self-start space-y-4 bg-gray-900 shadow-xl shadow-[#f36428]/20 rounded-lg flex flex-col rounded-bl-[80px] w-full md:max-w-150 min-h-40 max-h-auto pb-10">
                 <div class="px-7 md:px-10 pt-6 md:pt-8 gap-2 flex flex-col text-end">
                     <h1 class="text-2xl md:text-3xl font-bold text-white">
                         Excellence
@@ -452,7 +581,7 @@
                 </div>
             </div>
             <div
-                class="place-self-end space-y-4 bg-gray-900 shadow-xl shadow-[#f36428]/20 rounded-lg flex flex-col rounded-tr-[80px] w-full md:max-w-120 min-h-40 max-h-auto pb-10">
+                class="place-self-end space-y-4 bg-gray-900 shadow-xl shadow-[#f36428]/20 rounded-lg flex flex-col rounded-tr-[80px] w-full md:max-w-150 min-h-40 max-h-auto pb-10">
                 <div class="px-7 md:px-10 pt-6 md:pt-8 gap-2 flex flex-col text-start">
                     <h1 class="text-2xl md:text-3xl font-bold text-white">
                         Customer-Centricity
@@ -463,7 +592,7 @@
                 </div>
             </div>
             <div
-                class="place-self-start space-y-4 bg-[#f36428] shadow-xl shadow-[#f36428]/20 rounded-lg flex flex-col rounded-tl-[80px] w-full md:max-w-120 min-h-40 max-h-auto pb-10">
+                class="place-self-start space-y-4 bg-[#f36428] shadow-xl shadow-[#f36428]/20 rounded-lg flex flex-col rounded-tl-[80px] w-full md:max-w-150 min-h-40 max-h-auto pb-10">
                 <div class="px-7 md:px-10 pt-6 md:pt-8 flex gap-2 flex-col text-end">
                     <h1 class="text-2xl md:text-3xl font-bold text-white">
                         Sustainability
@@ -475,22 +604,22 @@
             </div>
         </div>
     </div>
-    <div class="w-full h-50 mt-30">
+    <!-- <div class="w-full h-50 mt-30">
         <img src="images/11.jpg" alt="" class="w-[45rem] h-auto object-cover" />
-    </div>
+    </div> -->
     <!-- fAQ -->
     <div id="faq" x-data="{ open: null }"
-        class="flex flex-col gap-4 justify-center items-center pt-30 pb-40 w-full  h-auto ">
+        class="flex flex-col gap-4 justify-center items-center pt-30 pb-40 w-full  h-auto bg-gray-950">
         <!-- Title -->
-        <h1 class="text-4xl font-extrabold text-[#f36428]">FAQs</h1>
-        <div class="h-1 w-14 bg-yellow-300 mb-6"></div>
+        <h1 class="text-4xl font-extrabold text-white">FAQs</h1>
+        <div class="h-1 w-14 bg-[#ff6324] mb-6"></div>
 
         <div class="overflow-hidden grid grid-cols-1 gap-4 h-full w-full  px-4 sm:px-8 lg:px-18 ">
             <!-- Question 1 -->
-            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200 ">
+            <div class="w-full h-auto  py-4  px-7 border-b-2 border-gray-200/40">
                 <button @click="open = open === 1 ? null : 1"
                     class="flex justify-between items-center w-full text-left gap-3">
-                    <h1 class="text-md md:text-md md:text-lg font-medium text-gray-700 ">What types of vehicles does
+                    <h1 class="text-md md:text-md md:text-lg font-medium text-white ">What types of vehicles does
                         TUBILEX MOTORS offer?</h1>
                     <span>
                         <svg x-show="open !== 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -508,7 +637,7 @@
 
                     </span>
                 </button>
-                <div x-show="open === 1" x-transition class="mt-8 text-gray-700 text-sm sm:text-md ">
+                <div x-show="open === 1" x-transition class="mt-8 text-white text-sm sm:text-md ">
                     We specialize in the import and export of high-quality vehicles, including sedans, SUVs, pickups,
                     and luxury cars. Our collection is carefully selected to meet the needs of both individual clients
                     and corporate customers.
@@ -516,19 +645,19 @@
             </div>
 
             <!-- Question 2 -->
-            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
+            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200/40">
                 <button @click="open = open === 2 ? null : 2"
                     class="flex justify-between items-center w-full text-left gap-3">
-                    <h1 class="text-md md:text-lg font-medium text-gray-700">Are the vehicles brand new or used?</h1>
+                    <h1 class="text-md md:text-lg font-medium text-white">Are the vehicles brand new or used?</h1>
                     <span>
                         <svg x-show="open !== 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324]">
                             <path fill-rule="evenodd"
                                 d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                 clip-rule="evenodd" />
                         </svg>
                         <svg x-show="open === 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324]">
                             <path fill-rule="evenodd"
                                 d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
                                 clip-rule="evenodd" />
@@ -536,17 +665,17 @@
 
                     </span>
                 </button>
-                <div x-show="open === 2" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                <div x-show="open === 2" x-transition class="mt-8 text-white text-sm sm:text-md">
                     TUBILEX MOTORS provides both brand-new and certified pre-owned vehicles. Every car is thoroughly
                     inspected to ensure it meets international safety and quality standards before delivery.
                 </div>
             </div>
 
             <!-- Question 3 -->
-            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
+            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200/40">
                 <button @click="open = open === 3 ? null : 3"
                     class="flex justify-between items-center w-full text-left gap-3">
-                    <h1 class="text-md md:text-lg font-medium text-gray-700">Can I finance or pay in installments?
+                    <h1 class="text-md md:text-lg font-medium text-white">Can I finance or pay in installments?
                     </h1>
                     <span>
                         <svg x-show="open !== 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -564,17 +693,17 @@
 
                     </span>
                 </button>
-                <div x-show="open === 3" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                <div x-show="open === 3" x-transition class="mt-8 text-white text-sm sm:text-md">
                     Yes. We offer flexible payment plans and financing options through our trusted banking and
                     micro-finance partners. Our team will guide you in selecting the best plan that suits your budget.
                 </div>
             </div>
 
             <!-- Question 4 -->
-            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
+            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200/40">
                 <button @click="open = open === 4 ? null : 4"
                     class="flex justify-between items-center w-full text-left gap-3">
-                    <h1 class="text-md md:text-lg font-medium text-gray-700">Do you provide warranty and after-sales
+                    <h1 class="text-md md:text-lg font-medium text-white">Do you provide warranty and after-sales
                         support?</h1>
                     <span>
                         <svg x-show="open !== 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -584,7 +713,7 @@
                                 clip-rule="evenodd" />
                         </svg>
                         <svg x-show="open === 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text--[#ff6324]">
                             <path fill-rule="evenodd"
                                 d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
                                 clip-rule="evenodd" />
@@ -592,17 +721,17 @@
 
                     </span>
                 </button>
-                <div x-show="open === 4" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                <div x-show="open === 4" x-transition class="mt-8 text-white text-sm sm:text-md">
                     Absolutely. All our vehicles come with a warranty package that covers key components. We also
                     provide after-sales support, including maintenance advice and assistance with spare parts.
                 </div>
             </div>
 
             <!-- Question 5 -->
-            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200">
+            <div class="w-full h-auto  py-3 px-7 border-b-2 border-gray-200/40">
                 <button @click="open = open === 5 ? null : 5"
                     class="flex justify-between items-center w-full text-left gap-3">
-                    <h1 class="text-md md:text-lg font-medium text-gray-700">How long does it take to receive a car
+                    <h1 class="text-md md:text-lg font-medium text-white">How long does it take to receive a car
                         once ordered?</h1>
                     <span>
                         <svg x-show="open !== 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -620,17 +749,17 @@
 
                     </span>
                 </button>
-                <div x-show="open === 5" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                <div x-show="open === 5" x-transition class="mt-8 text-white text-sm sm:text-md">
                     Delivery time depends on the type of vehicle and your location. For in-stock vehicles, delivery can
                     take as little as 3–7 business days. For special imports, the process may take 4–6 weeks.
                 </div>
             </div>
 
             <!-- Question 6 -->
-            <div class="w-full h-auto py-3 px-7 border-b-2 border-gray-200">
+            <div class="w-full h-auto py-3 px-7 border-b-2 border-gray-200/40">
                 <button @click="open = open === 6 ? null : 6"
                     class="flex justify-between items-center w-full text-left gap-3">
-                    <h1 class="text-md md:text-lg font-medium text-gray-700">Does TUBILEX MOTORS help with vehicle
+                    <h1 class="text-md md:text-lg font-medium text-white">Does TUBILEX MOTORS help with vehicle
                         registration and insurance?</h1>
                     <span>
                         <svg x-show="open !== 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -640,7 +769,7 @@
                                 clip-rule="evenodd" />
                         </svg>
                         <svg x-show="open === 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text-[#ff6324] ">
+                            fill="currentColor" class="size-6 lg:size-7 cursor-pointer text--[#ff6324]">
                             <path fill-rule="evenodd"
                                 d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z"
                                 clip-rule="evenodd" />
@@ -648,7 +777,7 @@
 
                     </span>
                 </button>
-                <div x-show="open === 6" x-transition class="mt-8 text-gray-700 text-sm sm:text-md">
+                <div x-show="open === 6" x-transition class="mt-8 text-white text-sm sm:text-md">
                     Yes. We offer full assistance with registration, licensing, and insurance to ensure that your car is
                     ready for the road the moment you receive it.
                 </div>
@@ -658,27 +787,25 @@
 
     </div>
     <!-- contact us -->
-    <div id="contacts" class="h-auto w-full px-4 sm:px-8 md:px-12 py-4 sm:py-8 md:py-12 pb-15 flex items-center justify-center ">
+    <div id="contacts" class="h-auto w-full px-4 sm:px-8 md:px-12 py-4 sm:py-8 md:py-12 pb-15 flex items-center justify-center  bg-[#ff6324]/70">
         <div
-            class=" grid grid-cols-1 grid-rows-[1fr_1.5fr] md:grid-cols-[1fr_1.5fr] md:grid-rows-1 w-full h-full bg-gray-100 rounded-t-xl   ">
+            class=" grid grid-cols-1 grid-rows-[1fr_1.5fr] md:grid-cols-[1fr_1.5fr] md:grid-rows-1 w-full h-full bg-gray-100  p-4  ">
             <div class="relative w-full h-full block ">
-                <div class="absolute bg-gradient-to-tr from-[#ff6324]  to-transparent top-0 left-0 w-full h-full rounded-t-xl ">
-                </div>
-                <video src="video/1.mp4" autoplay loop muted class="w-full h-auto object-cover  rounded-t-xl"></video>
+                <video src="video/2.mp4" autoplay loop muted class="w-full h-full object-cover "></video>
                 <!-- <img src="images/6.jpeg" alt="" class="w-full h-full object-cover "> -->
             </div>
-            <div class=" grid grid-rows-[0.5fr_1fr_1fr_2fr_1fr]    gap-4 px-6 sm:px-12 py-8 sm:py-15 ">
+            <div class=" grid grid-rows-[0.5fr_1fr_1fr_2fr_1fr]    gap-4 px-6 sm:px-12 py-2 sm:py-8 ">
                 <h1 class="text-3xl font-extrabold text-[#ff6324] flex items-center">Contact Us
                 </h1>
                 <input type="text" placeholder="Your Name"
                     class=" w-full h-full p-4 bg-white focus:outline-2 outline-[#ff6324]/70 outline-offset-4">
                 <input type="text" placeholder="Your Email"
                     class="w-full h-full p-4 bg-white focus:outline-2 outline-[#ff6324]/70 outline-offset-4">
-                <textarea placeholder="Write your comment here..." name="textarea" cols="20" rows="3"
+                <textarea placeholder="comment" name="textarea" cols="20" rows="3"
                     class="w-full h-full p-4 bg-white focus:outline-2 outline-[#ff6324]/70 outline-offset-4"
-                    id=""> Write your comment here...</textarea>
+                    id=""></textarea>
                 <button
-                    class="cursor-pointer w-full h-full p-4 bg-[#ff6324] text-white font-semibold hover:bg-[#e04e15]">Send</button>
+                    class="cursor-pointer w-full h-full p-4 bg-gray-900 text-white font-semibold hover:bg-[#ff6324] ease-in-out duration-300">Send</button>
             </div>
         </div>
     </div>
@@ -695,8 +822,7 @@
             class=" grid gap-6 grid-cols-1 grid-rows-[1fr_3fr]  p-0 md:p-18 md:grid-cols-[1fr_2fr] md:grid-rows-1 px-6 sm:px-12 py-8 sm:py-14 md:py-20">
             <div class="text-white flex gap-2 justify-center items-center flex-col  ">
                 <h1 class="text-2xl md:text-4xl font-extrabold ">Tubilex Motors</h1>
-                <p class="text-sm md:text-md font-normal text-white/50">Miliki Gari zuri,
-                    Endesha Kwa Amani.</p>
+                <p class="text-sm md:text-md font-normal text-white/50">Cars Without Borders</p>
             </div>
             <div class="grid grid-cols-[1fr_1fr] h-full w-auto gap-2 md:gap-8">
                 <div class="text-white flex flex-col  gap-2">
