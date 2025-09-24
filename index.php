@@ -404,68 +404,7 @@
                 exceed expectations.</p>
         </div>
     </div>
-    <!-- orders -->
-    <!-- <div id="orders" class="relative flex flex-col px-3 sm:px-8 md:px-10  pt-14">
-        <div class="h-20 w-full  grid place-content-center pb-20 pt-10 place-items-center gap-3">
-            <h1 class="text-center text-3xl font-bold text-gray-900">Check your dream Car and Order now</h1>
-            <div class="h-1 w-18 bg-[#ff6324] "></div>
-        </div>
-
-        <div class="relative flex  gap-4 h-100 w-full overflow-x-scroll  snap-x snap-mandatory  ">
-            <div class="relative rounded-xl min-w-80 h-full">
-                <div
-                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
-                </div>
-                <img src="./images/9.jpeg" alt="" class="w-full h-full rounded-xl object-cover">
-               
-                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                    target="_blank" rel="noopener"
-                    class="absolute top-80 z-60 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
-                    Order Now </a>
-            </div>
-            <div class="relative rounded-3xl min-w-80 h-full">
-                <div
-                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
-                </div>
-                <img src="./images/000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-
-                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                    target="_blank" rel="noopener"
-                    class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
-                    Order Now </a>
-            </div>
-            <div class="relative rounded-xl min-w-80 h-full">
-                <div
-                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
-                </div>
-                <img src="./images/01.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                    target="_blank" rel="noopener"
-                    class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
-                    Order Now </a>
-            </div>
-            <div class="relative rounded-xl min-w-80 h-full">
-                <div
-                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
-                </div>
-                <img src="./images/000000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                    target="_blank" rel="noopener"
-                    class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
-                    Order Now </a>
-            </div>
-            <div class="relative rounded-xl min-w-80 h-full">
-                <div
-                    class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-t  from-[#f36428] to-transparent z-10">
-                </div>
-                <img src="./images/0000000.jpg" alt="" class="w-full h-full rounded-xl object-cover">
-                <a href="https://wa.me/255788835182?text=Hello%20I%20am%20interested%20in%20your%20cars.%20Can%20you%20share%20details%3F"
-                    target="_blank" rel="noopener"
-                    class="absolute top-80 z-30 left-10 bg-yellow-400 w-auto h-10 px-6 rounded-full flex justify-center items-center text-xl text-white font-extrabold ">
-                    Order Now </a>
-            </div>
-        </div>
-    </div> -->
+    
     <!-- Our Services -->
     <div id="services"
         class="relative w-full h-auto py-20 flex flex-col justify-center items-center gap-6 md:gap-10 px-4 md:px-6 lg:px-8 bg-white">
