@@ -1,6 +1,6 @@
 <?php
 
-include 'conection.php';
+include 'connection.php';
 
 // create Admin Account
 if ($conn) {

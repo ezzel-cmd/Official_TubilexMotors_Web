@@ -11,3 +11,16 @@ CREATE TABLE tbmotors_db.admin (
 );
 
 SELECT * FROM tbMotors_db.admin;
+
+
+USE tbmotors_db;
+
+CREATE TABLE contact (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    message VARCHAR(255) NOT NULL,
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT * FROM contact;
