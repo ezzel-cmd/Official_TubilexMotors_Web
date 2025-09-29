@@ -223,17 +223,27 @@ function visitors()
 {
     $conn = connectToDatabase();
     $ip = $_SERVER['REMOTE_ADDR'];
+
+    // Check if this IP already visited today
     $sqlCheck = "SELECT * FROM visitors WHERE ip_address = :ip AND DATE(visit_date) = CURDATE()";
     $stmtCheck = $conn->prepare($sqlCheck);
     $stmtCheck->execute([':ip' => $ip]);
+
     if ($stmtCheck->rowCount() == 0) {
+        // Insert new visitor
         $sqlInsert = "INSERT INTO visitors (ip_address) VALUES (:ip)";
         $stmtInsert = $conn->prepare($sqlInsert);
         $stmtInsert->execute([':ip' => $ip]);
     }
-    $totalVisitors = $stmtCheck->rowCount();
-    return $totalVisitors;
+
+    // ✅ Correct way: count all rows in visitors table
+    $sqlTotal = "SELECT COUNT(*) AS total FROM visitors";
+    $stmtTotal = $conn->query($sqlTotal);
+    $result = $stmtTotal->fetch(PDO::FETCH_ASSOC);
+
+    return $result['total'] ?? 0;
 }
+
 
 function countVisitorsToday()
 {

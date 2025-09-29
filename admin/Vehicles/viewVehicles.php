@@ -1,6 +1,7 @@
 <?php
 
 // include "../../index.php";
+$getComment = getComment();
 
 ?>
 
@@ -12,8 +13,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../../src/output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Vehicles</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet" />
@@ -62,7 +64,7 @@
         class="h-full transition-all duration-500 ease-in-out"> <!-- ✅ Smooth width resize -->
 
         <div class="w-full h-full bg-white rounded-2xl flex flex-col items-center justify-between px-4 py-6">
-            <div class="w-full h-auto flex flex-col gap-8 pt-2">
+            <div class="w-full h-auto flex flex-col gap-2 pt-2">
 
                 <!-- Logo Section -->
                 <div class="flex items-center gap-1">
@@ -71,8 +73,11 @@
                     <h1 x-show="open" x-transition class="text-lg font-extrabold text-gray-800">Tubilex Motors</h1>
                 </div>
 
+                <!-- <h1 class="text-md font-semibold text-gray-400 mt-10 px-2 mb-4">Menu</h1> -->
+
+
                 <!-- Menu Links -->
-                <div class="w-full h-auto flex flex-col gap-3">
+                <div class="w-full h-auto flex flex-col gap-3 mt-12">
                     <a
                         href="../../index.php?action=dashboard"
                         class="text-gray-800 text-sm hover:text-white transform transition duration-300 ease-in-out bg-gray-100 hover:bg-orange-600 hover:shadow-md hover:shadow-gray-400/20 py-4 px-3 rounded-md flex items-center gap-2">

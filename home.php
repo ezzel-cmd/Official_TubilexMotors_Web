@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tubilex Motors</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <meta name="google-site-verification" content="ZQG9g8Pm3XnGmJpJjW9z8x3qK9v8L9a9x8m" />
+    <meta name="description" content="Tubilex Motors is a leading automotive company in Tanzania, providing top-notch car sales and maintenance services. We offer a wide range of vehicles from popular brands, ensuring that our customers get the best deals on their desired cars.">
+    <meta name="keywords" content="car sales, car maintenance, car services, automotive company, Tanzania, tubilex motors">
+    <meta name="author" content="Tubilex Motors">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Russo+One&display=swap"

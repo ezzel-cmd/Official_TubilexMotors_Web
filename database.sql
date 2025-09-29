@@ -13,7 +13,6 @@ CREATE TABLE tbmotors_db.admin (
 SELECT * FROM tbMotors_db.admin;
 
 
-USE tbmotors_db;
 
 CREATE TABLE contact (
     id INT AUTO_INCREMENT PRIMARY KEY,
